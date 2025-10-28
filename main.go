@@ -5,8 +5,20 @@
 //	set value
 package main
 
-import "fmt"
+import (
+	"fmt"
+	// se indenta solo hacia abajo cuando hay multiples paquetes
+	"math"
+)
+
+// Namin is optional
+func mathExample() float64 {
+	float := 3.14
+	newValue := math.Round(float)
+	// fmt.Println(newValue)
+	return newValue
+}
 
 func main() {
-	fmt.Println("Hello, World!")
+	fmt.Println(mathExample())
 }
