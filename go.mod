@@ -1,4 +1,4 @@
-module main
+module GO_tutorial
 
 go 1.25.3
 
