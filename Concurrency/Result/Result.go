@@ -1,5 +1,7 @@
 package Result
 
+// A struct it to hold the result of a concurrent operation
+// Similar to a model in c#
 import (
 	"time"
 )

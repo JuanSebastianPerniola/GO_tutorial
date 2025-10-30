@@ -1,15 +1,20 @@
-// Function a set of a instruccion a name is optinal
-// Example:
-//
-//	set name value
-//	set value
+// ConteztPropagation
 package ContextPropagation
 
 import (
 	"fmt"
-	// se indenta solo hacia abajo cuando hay multiples paquetes
+	"time"
 )
 
-func main() {
-	fmt.Println("ContextPropagation")
+func Main() {
+	go thread(1)
+	go thread(2)
+	fmt.Scanln()
+}
+
+func thread(id int) {
+	for i := 1; i < 10; i++ {
+		fmt.Print("Thread", id, " : ", i)
+		time.Sleep(100 * time.Millisecond)
+	}
 }
