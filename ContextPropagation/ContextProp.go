@@ -1,12 +1,12 @@
 // ConteztPropagation
-package ContextPropagation
+package main
 
 import (
 	"fmt"
 	"time"
 )
 
-func Main() {
+func main() {
 	go thread(1)
 	go thread(2)
 	fmt.Scanln()
