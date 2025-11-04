@@ -36,7 +36,7 @@ func main() {
 	defer cancel()
 
 	var waitgroup sync.WaitGroup
-	for i := 1; i <= 3; i++ {
+	for i := 1; i <= 3; i++ { // launch 3 workers
 		waitgroup.Add(1)
 		go worker(context, i, &waitgroup)
 	}
